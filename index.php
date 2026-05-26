@@ -17,7 +17,8 @@
     .container {
         width: 100%;
         max-width: 600px;
-        margin: 40px auto;
+        /* margin: 40px auto; */
+        margin: 20px auto 40px auto;
         background: #fff;
         padding: 25px;
         border-radius: 10px;
@@ -81,6 +82,19 @@
         margin-top: 10px;
     }
 
+    .logo {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.logo img {
+    width: 100%;
+    max-width: 600px;
+    height: 180px;
+    border-radius: 12px;
+}
+
     /*  MOBILE OPTIMIZATION */
     @media (max-width: 600px) {
         .container {
@@ -100,11 +114,28 @@
         button {
             font-size: 15px;
         }
+        .logo {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
     }
 </style>
 
 </head>
 <body>
+<div class="logo">
+    <img src="images/geneithlogo.jpeg" alt="Geneith Health Logo">
+</div>
 
 <div class="container">
 
