@@ -2,80 +2,106 @@
 <html>
 <head>
     <title>Activator Recruitment Form</title>
-
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #2c3e50;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #333;
+        font-size: 14px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        outline: none;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #007bff;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
+
+    .note {
+        text-align: center;
+        font-size: 12px;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    /*  MOBILE OPTIMIZATION */
+    @media (max-width: 600px) {
         .container {
-            width: 100%;
-            max-width: 600px;
-            margin: 50px auto;
-            background: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 15px auto;
+            padding: 18px;
+            border-radius: 8px;
         }
 
         h2 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            color: #333;
+            font-size: 18px;
         }
 
         input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 14px;
-            outline: none;
-        }
-
-        input:focus, textarea:focus {
-            border-color: #007bff;
-        }
-
-        textarea {
-            resize: none;
+            font-size: 16px;
         }
 
         button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 12px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: 0.3s;
+            font-size: 15px;
         }
-
-        button:hover {
-            background: #0056b3;
-        }
-
-        .note {
-            text-align: center;
-            font-size: 13px;
-            color: #777;
-            margin-top: 10px;
-        }
-    </style>
+    }
+</style>
 
 </head>
 <body>
